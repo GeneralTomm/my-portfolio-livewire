@@ -2,18 +2,16 @@
 
 namespace App\Http\Livewire\Admin;
 
-use Livewire\Component;
-use Livewire\WithPagination;
+use Livewire\{Component,WithPagination};
+#use Livewire\WithPagination;
 use App\Models\Admin\Testimonials;
 
 class Testimonial extends Component
 {
-    public $testimonial_id , $name, $description;
     use WithPagination;
-    public $confirmation;
+    public $testimonial_id , $name, $description,$confirmation,$search;
     public $paginate = 5;
     public $isModalOpen = 0;
-    public $search;
 
     public function updatingSearch(){
         $this->resetPage();
@@ -75,6 +73,7 @@ class Testimonial extends Component
     }
     public function render()
     {
+        // use Testimonials::when() tapi saya ragu.
         $testimonials = $this->search === null ? Testimonials::latest()->paginate($this->paginate):
         Testimonials::where('name' ,'LIKE' , '%'.$this->search.'%')
         ->orWhere('slug' , 'LIKE' , '%'.$this->search.'%')
