@@ -1,0 +1,217 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base{
+    html{
+        font-family: 'Quicksand', sans-serif;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+@layer components{
+
+    /* body */
+    .body-class{
+        @apply bg-gray-50 overflow-hidden min-h-screen dark:bg-gray-800 dark:text-white
+    }
+
+    /* header */
+    .header-class{
+        @apply bg-white shadow-sm sticky top-0 z-20 p-4 dark:bg-gray-900 dark:text-white
+    }
+
+    .main-class{
+        @apply p-10 flex-auto overflow-hidden h-screen overflow-y-auto dark:bg-gray-700
+    }
+
+    /* getting */
+    .span-notication{
+        @apply text-xs font-semibold tracking-wider dark:text-white
+    }
+
+    /* h1 */
+    .h1-version-large{
+        @apply text-3xl font-bold
+    }
+    .h1-version-normal{
+        @apply text-2xl font-bold
+    }
+    .h1-version-small{
+        @apply text-xl font-bold
+    }
+    /* p */
+    .p-version-large{
+        @apply text-xl font-normal
+    }
+    .p-version-normal{
+        @apply text-base font-normal
+    }
+    .p-version-small{
+        @apply text-sm font-normal
+    }
+    .p-version-xs{
+        @apply text-xs font-normal
+    }
+
+
+    .menu{
+        @apply text-sm font-normal flex
+    }
+    .active-menu {
+        @apply text-white bg-gray-900 w-full py-2 rounded-md dark:text-gray-900 px-2 dark:bg-white
+    }
+    .hover-active-menu {
+        @apply hover:text-white hover:bg-gray-900 w-full py-2 rounded-md px-2 dark:hover:text-gray-900 dark:hover:bg-white dark:text-white
+    }
+
+    /* flex gap */
+
+    .flex-gap-1{
+        @apply flex lg:flex-row flex-col gap-1
+    }
+    .flex-gap-2{
+        @apply flex lg:flex-row flex-col gap-2
+    }
+    .flex-gap-3{
+        @apply flex lg:flex-row flex-col gap-3
+    }
+    .flex-gap-4{
+        @apply flex lg:flex-row flex-col gap-4
+    }
+    .flex-gap-5{
+        @apply flex lg:flex-row flex-col gap-5
+    }
+
+    /* grid 1 */
+    .grids{
+        @apply grid grid-cols-1 gap-4
+    }
+    .grids-1{
+        @apply grid grid-cols-1 gap-4 p-2 lg:mt-0 mt-20
+    }
+    .grids-cols-1{
+        @apply grid grid-cols-1 gap-1 p-2
+    }
+    .grids-cols-2{
+        @apply grid lg:grid-cols-2 grid-cols-1 gap-2 p-2
+    }
+    .grids-cols-3{
+        @apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 p-2
+    }
+    .grids-cols-4{
+        @apply grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 p-2
+    }
+    .grids-cols-5{
+        @apply grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-5 p-2
+    }
+
+    .btn {
+        @apply bg-black px-3 rounded-md hover:bg-gray-500 py-2 text-white
+    }
+
+
+    /* components */
+
+    /* badge default */
+    .badge{
+        @apply bg-black p-2.5 text-xs text-white rounded-md
+    }
+    .badge-blue{
+        @apply bg-blue-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-orange{
+        @apply bg-orange-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-yellow{
+        @apply bg-yellow-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-red{
+        @apply bg-red-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-gray{
+        @apply bg-gray-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-slate{
+        @apply bg-slate-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-zinc{
+        @apply bg-zinc-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-neutral{
+        @apply bg-neutral-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-stone{
+        @apply bg-stone-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-amber{
+        @apply bg-amber-500 p-2.5 text-xs text-white rounded-md
+    }
+    .badge-lime{
+        @apply bg-lime-500 p-2.5 text-xs text-white rounded-md
+    }
+
+    /* badge small */
+    .badge-small{
+        @apply bg-black p-1 text-sm text-white rounded-md
+    }
+    .badge-small-blue{
+        @apply bg-blue-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-orange{
+        @apply bg-orange-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-yellow{
+        @apply bg-yellow-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-red{
+        @apply bg-red-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-gray{
+        @apply bg-gray-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-slate{
+        @apply bg-slate-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-zinc{
+        @apply bg-zinc-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-neutral{
+        @apply bg-neutral-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-stone{
+        @apply bg-stone-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-amber{
+        @apply bg-amber-500 p-1 text-sm text-white rounded-md
+    }
+    .badge-small-lime{
+        @apply bg-lime-500 p-1 text-sm text-white rounded-md
+    }
+
+    .border-table{
+        @apply px-5 bg-gray-200 rounded-t-md w-full flex justify-between items-center dark:bg-gray-600
+    }
+    .border-table-span{
+        @apply text-xl font-semibold
+    }
+
+}
+

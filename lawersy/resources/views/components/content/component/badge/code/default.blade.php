@@ -1,0 +1,10 @@
+&lt;span class=&quot;badge&quot;&gt;Black&lt;/span&gt;
+&lt;span class=&quot;badge-blue&quot;&gt;Blue&lt;/span&gt;
+&lt;span class=&quot;badge-orange&quot;&gt;Orange&lt;/span&gt;
+&lt;span class=&quot;badge-yellow&quot;&gt;Yellow&lt;/span&gt;
+&lt;span class=&quot;badge-red&quot;&gt;Red&lt;/span&gt;
+&lt;span class=&quot;badge-lime&quot;&gt;Lime&lt;/span&gt;
+&lt;span class=&quot;badge-slate&quot;&gt;Slate&lt;/span&gt;
+&lt;span class=&quot;badge-amber&quot;&gt;Amber&lt;/span&gt;
+&lt;span class=&quot;badge-gray&quot;&gt;Gray&lt;/span&gt;
+&lt;span class=&quot;badge-zinc&quot;&gt;Zinc&lt;/span&gt;

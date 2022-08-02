@@ -1,0 +1,1 @@
+<button wire:click="keluarAplikasi" class="bg-red-900 py-2 px-5 hover:bg-red-600 text-white rounded-md cursor-pointer">Keluar</button>
